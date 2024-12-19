@@ -1,0 +1,686 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial, sans-serif';
+    overflow-x: hidden;
+}
+
+body {
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #333;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f7f6f6;
+    display: flex;
+    align-items: center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5rem; /* You can adjust the size */
+    font-weight: bold;
+}
+
+.logo1-icon {
+    font-size: 1.8rem;
+    margin-right: 8px;
+}
+
+.logo1 span {
+    color: #e91e63;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    background-color: #e91e63;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #e91e63;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e91e63;
+}
+
+.logo span {
+    color: #ff6347;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar ul li {
+    margin-left: 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #d7d3d3;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #e91e63;
+}
+
+
+.hero {
+    height: 90vh;
+    background-image: url('https://nolabels.in/cdn/shop/articles/Types_of_Fashion_Styles_2.jpg?v=1704966983');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 5.5rem; /* You can adjust the size */
+    font-weight: bold;
+}
+
+.hero-content h1 span {
+    color: #e91e63;
+}
+
+.hero-content p {
+    font-size: 4.2rem;
+    margin-bottom: 30px;
+    font-family: 'Brush Script MT', cursive;
+    /* You can adjust the size */
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e91e63;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e04e34;
+}
+
+
+
+.brand-marquee {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.scrolling-brands {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.trends {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.trends h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e91e63;
+}
+
+.trend-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #e91e63;
+}
+
+.card img {
+    width: 100%;
+    height: 426px;
+}
+
+.card h3 {
+    margin: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+#blog {
+    background-color: #f9f9f9;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+#blog h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #e91e63;
+}
+
+#blog p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.blog-card {
+    background-color: #fff;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blog-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    text-decoration: none;
+    color: #ff6347;
+    font-weight: bold;
+    border: 1px solid #ff6347;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #e91e63;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.scrolling-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    border-top: 2px solid #ff6347;
+    border-bottom: 2px solid #ff6347;
+    padding: 10px 0;
+    position: relative;
+}
+
+
+.scrolling-text {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollText 15s linear infinite;
+}
+
+.scrolling-text span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6347;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
+
+
+.fashion-video-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+
+.video-container {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.text-content {
+    flex: 1;
+    padding: 40px;
+    background: linear-gradient(135deg, #e91e63, #ff8c66);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 100%;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3.5rem; /* You can adjust the size */
+    font-weight: lighter;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.5rem; /* You can adjust the size */
+    font-weight: lighter;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ff6347;
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #e91e63;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+
+  .image-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+  
+  
+  .image-box,
+  .Wedding\ Dress {
+    flex: 1;
+    text-align: center;}
+
+  
+  .image-box img,
+  .Wedding\ Dress img {
+    width: 100%;
+    max-width: 392px;
+    height: 376px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  .text-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+  }
+  .text-box:hover{
+    /* background-color: #ff6347a4;  */
+    background:  linear-gradient(135deg, #e91e63, #ff8c66); 
+    transform: translateX(-20px);
+    color: #fff;   
+  }
+  
+  .text-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #444;
+  }
+  
+  .text-box p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .image-text-wrapper:nth-child(odd) {
+    flex-direction: row; 
+ 
+  }
+  .image-text-wrapper:nth-child(odd):hover{
+    /* background:  linear-gradient(135deg, #e91e63, #ff8c66);  */
+    transform: translateX(-20px);
+    color: #fff;      ;
+  
+    transition: background-color 0.3s ease; 
+  }
+  
+  .image-text-wrapper:nth-child(even) {
+    flex-direction: row-reverse; 
+  }
+  .image-text-wrapper:nth-child(even):hover{
+   
+    /* background:  linear-gradient(135deg, #904133a4, #ff8c66);  */
+    transform: translateX(-20px);
+    color: #fff;      ;
+
+    transition: background-color 0.3s ease; 
+  }
+  
+  
+
+  @media (max-width: 768px) {
+    .image-text-wrapper {
+      flex-direction: column; 
+      margin: 30px 0;
+    }
+  
+    .image-box img,
+    .Wedding\ Dress img {
+      max-width: 60%;
+      height: auto; 
+    }
+  
+    .text-box {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+
+
+
+/* Title */
+.faq-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* FAQ Items */
+  .faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+  
+  .faq-question {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #e91e63;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    font-size: 1.4rem;
+    color: #444;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item.active .faq-question::after {
+    content: '-';
+    transform: rotate(180deg);
+  }
+  
+  .faq-answer {
+    display: none;
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  
+  /* Active State for FAQ Item */
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  /* Hover Effect */
+  .faq-item:hover {
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s ease;
+  }
+
+
+
+
+
+
+footer {
+    background-color: #040404;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.social-media {
+    flex: 1;
+    min-width: 200px;
+}
+
+.social-media h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.social-media a:hover {
+    color: #ff6347;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.copyright {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.copyright p {
+    font-size: 0.9rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-media, .contact-info, .copyright {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
